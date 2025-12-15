@@ -1,0 +1,23 @@
+@import "tailwindcss"; 
+@plugin '../src/Components/Pages/hero.js'; 
+/* Note: You may need to change the path to fit your project structure */
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:where(.dark, .dark *));
+.active{ 
+    button{
+        color: #7E22CE;
+        background-color: rgba(185, 112, 249, 0.2);
+    }
+}
+[data-overlay-container="true"]:last-child {
+ 
+}
+
+ @theme{
+  --color-main_border:#E5E5E5;  
+ }
+.main_gradient {
+  @apply  bg-gradient-to-r from-[#667eea] to-[#764ba2]  ;
+}
+ 
